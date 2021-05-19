@@ -1,0 +1,105 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(0, 187, 255));
+    overflow: hidden;
+}
+section h1{
+    color: white;
+    font-size: 42px;
+    position: relative;
+    top: 10%;
+    left: 40%;
+}
+.bottom{
+    background: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+}
+section .wave{
+    position: absolute;
+    bottom: 50vh;
+    left: 0;
+    width: 100vw;
+    height: 100px;
+    background: url(../media/wave.png);
+    background-size: 1000px 100px;
+}
+section .wave.wave1{
+    animation: animate 15s linear infinite;
+    z-index: 4;
+    opacity: 1;
+    animation-delay: 0s;
+}
+section .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 3;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 53vh;
+}
+section .wave.wave3{
+    animation: animate 10s linear infinite;
+    z-index: 2;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 51vh;
+}
+section .wave.wave4{
+    animation: animate2 5s linear infinite;
+    z-index: 1;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 51vh;
+}
+@keyframes animate{
+    0%
+    {
+        background-position-x: 0;
+    }
+    100%
+    {
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2{
+    0%
+    {
+        background-position-x: 1000px;
+    }
+    100%
+    {
+        background-position-x: 0px;
+    }
+}
+.left{
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: left;
+}
+.left h2{
+    color: teal;
+    font-size: 32px;
+}
+.right{
+    margin-left: 10%;
+    margin-right: 10%;
+
+    text-align: right;
+}
+.right h2{
+    color: teal;
+    font-size: 32px;;
+}
