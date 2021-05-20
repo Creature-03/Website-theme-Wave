@@ -9,20 +9,38 @@ body{
     .container{
         background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(0, 187, 255));
     }
+    #phone, #smallTablet, #largeTablet{
+        display: none;
+    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px){
     .container{
         background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(0, 255, 76));
+    }
+    #phone, #smallTablet, #desktop{
+        display: none;
+    }
+    #largeTablet{
+        display: flex;
     }
 }
 @media screen and (min-width: 480px) and (max-width: 768px){
     .container{
         background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(255, 0, 43));
     }
+    #phone, #desktop, #largeTablet{
+        display: none;
+    }
+    #smallTablet{
+        display: flex;
+    }
 }
 @media screen and (min-width: 0px) and (max-width: 480px){
     .container{
         background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(238, 255, 0));
+    }
+    #desktop, #smallTablet, #largeTablet{
+        display: none;
     }
 }
 .container{
@@ -30,18 +48,23 @@ body{
     position: relative;
     width: 100vw;
     height: 100vh;
-    /* background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(217, 255, 0)); */
     overflow: hidden;
 }
 section{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 }
 section h1{
     color: white;
     font-size: 42px;
-    position: relative;
+    position: absolute;
     top: 10vh;
+}
+#phone, #desktop, #smallTablet, #largeTablet{
+    color: white;
+    font-size: 28px;
+    position: absolute;
+    top: 20vh;
 }
 .bottom{
     background: white;
