@@ -5,13 +5,32 @@ body{
     margin: 0;
     height: 150vh;
 }
-
+@media screen and (min-width: 1024px) {
+    .container{
+        background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(0, 187, 255));
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .container{
+        background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(0, 255, 76));
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 768px){
+    .container{
+        background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(255, 0, 43));
+    }
+}
+@media screen and (min-width: 0px) and (max-width: 480px){
+    .container{
+        background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(238, 255, 0));
+    }
+}
 .container{
     display: flex;
     position: relative;
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(0, 187, 255));
+    /* background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(217, 255, 0)); */
     overflow: hidden;
 }
 section{
@@ -52,21 +71,21 @@ section .wave.wave2{
     z-index: 3;
     opacity: 0.5;
     animation-delay: -5s;
-    bottom: 53vh;
+    bottom: 49.5vh;
 }
 section .wave.wave3{
     animation: animate 10s linear infinite;
     z-index: 2;
     opacity: 0.2;
     animation-delay: -2s;
-    bottom: 51vh;
+    bottom: 50.5vh;
 }
 section .wave.wave4{
     animation: animate2 5s linear infinite;
     z-index: 1;
-    opacity: 0.2;
+    opacity: 0.3;
     animation-delay: -2s;
-    bottom: 51vh;
+    bottom: 51.5vh;
 }
 @keyframes animate{
     0%
