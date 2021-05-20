@@ -3,6 +3,7 @@
 }
 body{
     margin: 0;
+    height: 150vh;
 }
 
 .container{
@@ -13,19 +14,22 @@ body{
     background: linear-gradient(to top, rgb(0, 0, 0) 55%, rgb(0, 187, 255));
     overflow: hidden;
 }
+section{
+    display: flex;
+    justify-content: center;
+}
 section h1{
     color: white;
     font-size: 42px;
     position: relative;
-    top: 10%;
-    left: 40%;
+    top: 10vh;
 }
 .bottom{
     background: white;
     position: absolute;
-    bottom: 0;
+    top: 50vh;
     left: 0;
-    height: 50vh;
+    height: 100vh;
     width: 100vw;
 }
 section .wave{
@@ -87,7 +91,9 @@ section .wave.wave4{
 .left{
     margin-left: 10%;
     margin-right: 10%;
+    display: block;
     text-align: left;
+    width: 80vw;
 }
 .left h2{
     color: teal;
@@ -96,10 +102,12 @@ section .wave.wave4{
 .right{
     margin-left: 10%;
     margin-right: 10%;
-
+    
+    display: block;
     text-align: right;
+    width: 80vw;
 }
 .right h2{
     color: teal;
-    font-size: 32px;;
+    font-size: 32px;
 }
